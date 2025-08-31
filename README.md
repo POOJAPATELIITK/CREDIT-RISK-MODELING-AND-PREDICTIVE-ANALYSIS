@@ -1,41 +1,47 @@
-**Project Overview**
+## **Project Overview**
 
 This project focuses on classifying customer loan eligibility by analyzing the credit strategy of a masked dataset of 51,336 customers with 79 features.
 The goal is to identify high-risk and low-risk customers, ensuring better decision-making in lending strategies.
 
-**Key Highlights**
+**Table of Contents**
 
-Feature Engineering (FE) and preprocessing to prepare the dataset.
+1. Dataset & Objective
 
-**Statistical analysis & Hypothesis Testing:**
+2. Key Techniques & Workflow
 
-Chi-Square Test, 
-ANOVA,
-Sequential VIF (Variance Inflation Factor).
+3. Modelling Approaches
 
-Data balancing: 
-SMOTE applied to handle class imbalance,
-Distribution comparison using the Kolmogorov–Smirnov test.
+4. Results
 
-**Modeling Approaches:**
+**Dataset & Objective**
 
-Logistic Regression (One-vs-Rest),
-Random Forest,
-XGBoost (with Optuna hyperparameter tuning),
+* Objective: Predict which customers are eligible for loans.
 
-Performance Achieved:
+* Data: Masked dataset containing 51,336 entries, each with 79 features including demographic, financial, and behavioral metrics.
 
-Best accuracy of 80% using XGBoost.
+**Key Techniques & Workflow**
 
-**Tech Stack**
+* Feature Engineering: Created new variables and refined existing ones.
 
-Python,
-Pandas, NumPy,
-Scikit-learn,
-XGBoost,
-Optuna (Hyperparameter Optimization),
-Imbalanced-learn (SMOTE),
-Matplotlib, Seaborn (Visualization),
+Hypothesis Testing:
+
+* Chi-Square tests for categorical relevance
+
+* ANOVA to compare means across groups
+
+* Sequential VIF to detect multicollinearity
+
+* Class Imbalance Handling: Applied SMOTE to balance classes.
+
+* Distribution Analysis: Used Kolmogorov–Smirnov test to compare feature distributions.
+
+**Modelling Approaches**
+
+* Baseline: Logistic Regression (One-vs-Rest).
+
+* Ensembles: Random Forest, XGBoost.
+
+* Optimization: Applied Optuna for hyperparameter tuning, boosting model performance.
 
 **Results**
 
