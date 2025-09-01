@@ -16,7 +16,6 @@ The goal is to identify high-risk and low-risk customers, ensuring better decisi
 ## **Dataset & Objective**
 
 * Objective: Predict which customers are eligible for loans.
-
 * Data: Masked dataset containing 51,336 entries, each with 79 features including demographic, financial, and behavioral metrics.
 
 ## **Key Techniques & Workflow**
@@ -26,21 +25,15 @@ The goal is to identify high-risk and low-risk customers, ensuring better decisi
 ### Hypothesis Testing:
 
 * Chi-Square tests for categorical relevance
-
 * ANOVA to compare means across groups
-
 * Sequential VIF to detect multicollinearity
-
 * Class Imbalance Handling: Applied SMOTE to balance classes.
-
 * Distribution Analysis: Used Kolmogorov–Smirnov test to compare feature distributions.
 
 ## **Modelling Approaches**
 
 * Baseline: Logistic Regression (One-vs-Rest).
-
 * Ensembles: Random Forest, XGBoost.
-
 * Optimization: Applied Optuna for hyperparameter tuning, boosting model performance.
 
 ## **Results**
